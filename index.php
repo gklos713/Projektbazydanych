@@ -93,7 +93,7 @@ if ($result->num_rows > 0) {
     echo "<table>";
     echo "<tr>
             <th>Imię Piłkarza</th>
-            <th>Imię Piłkarza</th>
+            <th>Nazwisko Piłkarza</th>
             <th>Nazwa Klubu</th>
           </tr>";
     while ($row = $result->fetch_assoc()) {
