@@ -61,7 +61,7 @@
         <img src="projekt20.drawio.png">
     </section>
     <section id="4">
-        <code>CREATE VIEW k_t as query SELECT kluby.Nazwa, trenerzy.Imie, trenerzy.Nazwisko from kluby left join trenerzy on trenerzy.Klub_Id = kluby.Id </code>
+        <code>CREATE VIEW k_t as SELECT kluby.Nazwa, trenerzy.Imie, trenerzy.Nazwisko from kluby left join trenerzy on trenerzy.Klub_Id = kluby.Id </code>
         <?php $db = new mysqli("localhost:84", "root", "", "liga_mistrzow");
 
 $result = $db->query("SELECT * FROM k_t");
